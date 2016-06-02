@@ -1,0 +1,9 @@
+machine:
+  timezone: Asia/Tokyo
+  hosts:
+    dev.hogehoge.com: 127.0.0.1
+  environment:
+    DATABASE_URL: mysql://geho:@127.0.0.1:3306/hoge
+
+  services:
+    - cassandra
