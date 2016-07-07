@@ -1,6 +1,10 @@
 machine:
   timezone: Asia/Tokyo
 
+test:
+  override:
+    - uname -a
+
 general:
   artifacts:
     - README.md
