@@ -4,6 +4,7 @@ machine:
 test:
   override:
     - uname -a
+    - python helloworld.py 
 
 general:
   artifacts:
