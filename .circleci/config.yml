@@ -5,10 +5,10 @@ jobs:
     docker:
       - image: nginx:alpine
       - image: circleci/node:4.8.2
-  steps:
-    - checkout
-    - run:
-      name: update-npm
-      command: 'sudo npm install -g npm@latest'
-    - store_artifacts:
-      path: hi.html
+    steps:
+      - checkout
+      - run:
+        name: update-npm
+        command: 'sudo npm install -g npm@latest'
+      - store_artifacts:
+        path: hi.html
