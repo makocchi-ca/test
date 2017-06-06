@@ -2,6 +2,7 @@ version: 2
 
 jobs:
   build:
+    working_directory: /tmp
     docker:
       - image: nginx:alpine
       - image: circleci/node:4.8.2
