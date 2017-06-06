@@ -4,8 +4,8 @@ jobs:
   build:
     working_directory: /tmp/hoge
     docker:
-      - image: nginx:alpine
       - image: circleci/node:4.8.2
+      - image: nginx:alpine
     steps:
       - checkout
       - run:
